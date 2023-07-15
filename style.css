@@ -1,0 +1,244 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(35, 171, 255);
+}
+nav{
+    background-color:rgb(0, 0, 0);
+    color: azure;
+}
+nav h1{
+    text-align: start;
+    font-size: 25px;
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gamecontainer
+{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+#name1,#name2{
+    color:red;
+    background-color: black;
+    text-align: center;
+    font-weight: 800;
+    width: 15vw;
+}
+#name2{
+    color:yellow;
+}
+.info{
+    width: 400px;
+    height: 400px;
+    font-size: larger;
+    font-family: Carter One;
+    color:rgb(4, 4, 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+button{
+    background-color: black;
+    color:white;
+    padding-inline: 20px;
+    padding-block:5px;
+}
+.score{
+    display: flex;
+    height: 50%;
+    width: 75%;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+#turn{
+    max-height: 30px;
+    overflow:hidden;
+    
+}
+.DiceRolling{
+    width: 150px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.374);
+}
+#dice{
+    width: 80px;
+    height: 80px;
+}
+#roll{
+    position: fix;
+}
+.boxes{
+    display:grid;
+    grid-template-rows: repeat(10,50px);
+    grid-template-columns:repeat(10,50px);
+}
+.container{
+    background-image:url("./Images/snakeladder.jpg");
+    background-repeat: no-repeat;
+    background-size:500px; 
+    position:relative;
+    height: 500px;
+    width: 500px;
+    margin:20px;
+    z-index: 5;
+}
+.p1,.p2{
+position:absolute;
+height: 50px;;
+width:50px;
+z-index: 10;
+background-color:red;
+border-radius: 50%;
+top:450px;
+left:-50px;
+box-sizing: border-box;
+border: 1px solid black;
+transition:linear all 0.5s;
+}
+
+.p2{
+    left:-100px;
+    background-color: yellow;
+}
+img{
+    position: absolute;
+    z-index: 12;
+    width:0px;
+    transition:width 0.5s;
+}
+.winner{
+position: absolute;
+top:20px;
+left:50px;
+width: 400px;
+border-radius:10px;
+background-color: rgba(0, 204, 255, 0.763);
+z-index: 30;
+box-sizing: border-box;
+font-size: 40px;
+text-align:center;
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 1000;
+transition: all 0.5s;
+}
+
+@media screen and (max-width:600px){
+    nav h1{
+        text-align:center;
+        font-size: 15px;
+        padding: 2px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .gamecontainer
+    {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .info{
+        width: 400px;
+        height: 220px;
+        font-size: medium;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content:center;
+        column-gap: 0px;
+    }
+    #name1,#name2{
+        font-weight: 800;
+        width: 40vw;
+        margin-bottom: 0;
+    }
+    button{
+        padding-inline: 10px;
+        padding-block:2px;
+    }
+    .score{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        row-gap: 10px;
+    }
+    #turn{
+        padding: 10px;
+        box-sizing: border-box;
+        max-height: 80px;
+        width: 180px;
+        overflow:hidden;    
+    }
+    .DiceRolling{
+        width: 70px;
+        height: 70px;
+    }
+    #dice{
+        width: 65px;
+        height: 65px;
+    }
+    #roll{
+        margin-left: 50px;
+        position: fix;
+    }
+    #reset{
+        margin-bottom: 10px;
+    }
+    .boxes{
+        display:grid;
+        grid-template-rows: repeat(10,40px);
+        grid-template-columns:repeat(10,40px);
+    }
+    .container{
+        background-image:url("./Images/snakeladder.jpg");
+        background-repeat: no-repeat;
+        background-size:400px; 
+        position:relative;
+        height: 400px;
+        width: 400px;
+        margin:0px;
+        margin-top: 0px;
+        z-index: 5;
+    }
+    .p1,.p2{
+    position:absolute;
+    height: 40px;;
+    width:40px;
+    left:0;
+    top:400px;
+    }
+    
+    .p2{
+        top: 440;
+    }
+    img{
+        position: absolute;
+        z-index: 12;
+        width:0px;
+        height: 400px;
+        transition:width 0.5s;
+    }
+    .winner{
+    position: absolute;
+    top:8px;
+    left:40px;
+    width: 300px;
+    border-radius:5px;
+    background-color: rgba(0, 204, 255, 0.763);
+    z-index: 30;
+    font-size: 30px;
+    }
+    
+    
+}
