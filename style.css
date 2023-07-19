@@ -10,7 +10,7 @@ nav{
     color: azure;
 }
 nav h1{
-    text-align: start;
+    text-align:center;
     font-size: 25px;
     padding: 5px;
     font-family: Arial, Helvetica, sans-serif;
@@ -97,7 +97,7 @@ position:absolute;
 height: 50px;;
 width:50px;
 z-index: 10;
-background-color:red;
+background-color:yellow;
 border-radius: 50%;
 top:450px;
 left:-50px;
@@ -108,7 +108,7 @@ transition:linear all 0.5s;
 
 .p2{
     left:-100px;
-    background-color: yellow;
+    background-color:red;
 }
 img{
     position: absolute;
@@ -216,11 +216,11 @@ transition: all 0.5s;
     height: 40px;;
     width:40px;
     left:0;
-    top:400px;
+    top:360px;
     }
     
     .p2{
-        top: 440;
+        top: 360px;
     }
     img{
         position: absolute;
